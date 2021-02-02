@@ -33,7 +33,7 @@ message = input("What message would you like to alter? ")
 
 shift_number = int(input("Enter a number, 1-25 (positive or negative), to shift the message "))
 # Number required to alter message. 25 max because 26 will result in no change.
-while abs(shift_number) not in range(1, 26):  # Prevent user from entering unusable inputs
+while abs(shift_number) not in range(1, 26):  # Prevent user from entering an unusable shift number
     print("That's not an option.")
     shift_number = int(input("Enter a number, 1-25, to shift the message "))
 
