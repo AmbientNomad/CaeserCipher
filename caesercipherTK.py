@@ -49,8 +49,7 @@ message = textbox.get('1.0', 'end')
 
 ttk.Label(mainwindow, text="Shift number, 1-25, positive or negative:").grid(column=0, row=1)
 
-shift = StringVar()
-shift_entry = ttk.Entry(mainwindow, width=10, textvariable=shift)
+shift_entry = ttk.Entry(mainwindow, width=10)
 shift_entry.grid(column=1, row=1)
 
 ttk.Button(mainwindow, text="Encrypt", command=decoder).grid(column=2, row=1)
