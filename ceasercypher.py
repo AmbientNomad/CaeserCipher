@@ -10,7 +10,7 @@ def decoder(user_message, cypher):
 
         if character.isalpha():  # Need to confirm character is a letter, 'else' it returns that character
 
-            # Variable and if statement for determining which letter of the alphabet will be swapped in
+            # Variable and if statement for determining which letter of the alphabet will be swapped
             change_index = alphabet.index(character.lower()) + cypher
             if change_index < 0:
                 change_index = len(alphabet) - abs(change_index)
