@@ -42,7 +42,7 @@ message = input("What message would you like to alter? ")
 # Allows user to enter any message, encrypted or not. Can be any message, but only A-Z characters will be shifted.
 
 cipher_word = input("Please enter a cipher, letters only, no spaces: ")
-# Number required to alter message. 25 max because 26 will result in no change.
+# While our message can handle characters and spaces, the script currently won't work if the cipher has them
 while not cipher_word.isalpha():  # Prevent user from entering an unusable characters
     print("That's not an option.")
     cipher_word = input("Please enter a cipher, letters only, no spaces: ")
