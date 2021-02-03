@@ -45,7 +45,7 @@ cipher_word = input("Please enter a cipher, letters only, no spaces: ")
 # While our message can handle characters and spaces, the script currently won't work if the cipher has them
 while not cipher_word.isalpha():  # Prevent user from entering an unusable characters
     print("That's not an option.")
-    cipher_word = input("Please enter a cipher word: ")
+    cipher_word = input("Please enter a cipher, letters only, no spaces: ")
 
 print(message)
 print(decoder(message, cipher_word))
