@@ -41,11 +41,11 @@ def decoder(user_message, cipher):
 message = input("What message would you like to alter? ")
 # Allows user to enter any message, encrypted or not. Can be any message, but only A-Z characters will be shifted.
 
-cipher_word = input("Please enter a cipher word: ")
+cipher_word = input("Please enter a cipher, letters only, no spaces: ")
 # Number required to alter message. 25 max because 26 will result in no change.
 while not cipher_word.isalpha():  # Prevent user from entering an unusable characters
     print("That's not an option.")
-    cipher_word = input("Please enter a cipher word: ")
+    cipher_word = input("Please enter a cipher, letters only, no spaces: ")
 
 print(message)
 print(decoder(message, cipher_word))
