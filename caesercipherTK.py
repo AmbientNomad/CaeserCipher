@@ -8,10 +8,9 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 def decoder():
     user_message = textbox.get('1.0', 'end')
     cypher = int(shift_entry.get())
-    message_list = [letter for letter in user_message]  # Splits our message to solve letter by letter
     solved_list = []  # Will store our converted letters before saving as a new message
 
-    for character in message_list:
+    for character in message:
 
         if character.isalpha():  # Need to confirm character is a letter, 'else' it returns that character
 
