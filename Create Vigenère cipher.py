@@ -6,7 +6,7 @@ def decoder(user_message, cipher):
     solved_list = []  # Will store our converted letters before saving as a new message
     cipher_pointer = 0  # Used for advancing through our cipher, to avoid additional loops
 
-    for character in message:
+    for character in user_message:
         if character.isalpha():  # Need to confirm character is a letter, 'else' it returns that character
 
             shifted_index = alphabet.index(character.lower())
